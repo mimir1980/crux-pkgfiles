@@ -1,0 +1,3 @@
+4fd57265848ca71e9864b8696efff73b  fix-CVE-2014-3660.patch
+9e6a9aca9d155737868b3dc5fd82f788  libxml2-2.9.2.tar.gz
+0286dac42107f45db23915bedc9a4f59  revert-catalog-initialize.patch

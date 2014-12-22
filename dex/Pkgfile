@@ -1,0 +1,15 @@
+# Description: Program to generate and execute DesktopEntry files of type Application
+# URL: https://github.com/jceb/dex
+# Packager: Roosevelt knowledgeispower80 at gmail dot com
+# Depends on: python
+
+name=dex
+version=0.7
+release=1
+source=(https://github.com/jceb/dex/archive/v$version.tar.gz)
+
+build() {
+	cd $name-$version
+make install PREFIX=/usr MANPREFIX=/usr/share/man DESTDIR=$PKG
+rm -rf $PKG/usr/share/doc
+}

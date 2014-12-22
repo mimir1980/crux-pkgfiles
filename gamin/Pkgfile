@@ -1,0 +1,19 @@
+# Description: File and directory monitoring system defined to be a subset of FAM 
+# URL: http://www.gnome.org/~veillard/gamin/
+# Packager: Roosevelt knowledgeispower80 at gmail dot com
+# Depends on: python glib
+
+name=gamin
+version=0.1.10
+release=1
+source=(http://www.gnome.org/~veillard/gamin/sources/gamin-0.1.10.tar.gz fix-deprecated-coonst.patch)
+
+build() {
+cd $name-$version
+patch -p1 -i $SRC/fix-deprecated-coonst.patch
+sed -i 's_#!/usr/bin/env python_#!/usr/bin/env python2_' python/gamin.py
+./configure --prefix=/usr --disable-static --with-threads \
+--disable-debug-api --disable-debug --with-python=/usr/bin/python2
+make
+make DESTDIR=$PKG install
+}
