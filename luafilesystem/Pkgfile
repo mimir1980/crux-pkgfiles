@@ -1,13 +1,14 @@
 # Description: File System for the Lua Programming Language
 # URL: http://www.keplerproject.org/luafilesystem/
 # Packager: Roosevelt knowledgeispower80 at gmail dot com
-# Depends on: lua51filesystem
+# Depends on: 
 
 name=luafilesystem
 version=1.6.2
 release=1
 source=(http://github.com/downloads/keplerproject/$name/$name-$version.tar.gz)
 
+# Add lua51filesystem if building with lua51
 build() {
 	cd $name-$version
 make
