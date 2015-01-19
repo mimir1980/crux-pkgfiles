@@ -1,0 +1,25 @@
+# Description: Perl extension for using OpenSSL.
+# URL: http://search.cpan.org/~flora/Net-SSLeay/
+# Packager: Roosevelt knowledgeispower80 at gmail dot com
+# Depends on: openssl
+
+name=p5-net-ssleay
+version=1.66
+release=1
+source=(http://search.cpan.org/CPAN/authors/id/M/MI/MIKEM/Net-SSLeay-$version.tar.gz)
+
+build() {
+	cd Net-SSLeay-$version
+	echo y | perl Makefile.PL
+	make OPTIMIZE="$CFLAGS"
+	make DESTDIR=$PKG install
+
+	# Remove perlcrap
+	find $PKG -type f \( \
+		-name '.packlist' -or \
+		-name '*.bs' -or \
+		-name 'perllocal.pod' \) -delete
+
+	# Remove empty directories
+	find $PKG -depth -empty -delete
+}

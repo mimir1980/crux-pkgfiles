@@ -1,0 +1,17 @@
+# Description: Yet Another JSON Lib. - A portable JSON parsing and serialization library in ANSI C
+# URL: http://github.com/lloyd/yajl/
+# Packager: mimir knowledgeispower80-at-gmail-dot-com
+# Depends on: cmake
+
+name=yajl
+version=2.1.0
+release=1
+source=(http://github.com/lloyd/$name/archive/$version.tar.gz)
+
+build() {
+	cd $name-$version
+cmake -DCMAKE_INSTALL_PREFIX=/usr .
+make
+make DESTDIR=$PKG install
+rm -rf $PKG/usr/share/doc
+}

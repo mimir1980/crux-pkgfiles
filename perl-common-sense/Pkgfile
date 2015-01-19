@@ -1,0 +1,16 @@
+# Description: Implements some sane defaults for Perl programs
+# URL: http://search.cpan.org/dist/common-sense/
+# Packager: mimir knowledgeispower80-at-gmail-dot-com
+# Depends on: perl
+
+name=perl-common-sense
+version=3.73
+release=1
+source=(http://search.cpan.org/CPAN/authors/id/M/ML/MLEHMANN/common-sense-$version.tar.gz)
+
+build() {
+	cd common-sense-$version
+        perl Makefile.PL PREFIX=/usr INSTALLDIRS=vendor
+        make
+        make DESTDIR=$PKG install
+}
