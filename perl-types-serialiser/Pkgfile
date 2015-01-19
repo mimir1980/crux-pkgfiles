@@ -1,0 +1,17 @@
+# Description: JSON encoder/decoder
+# URL: http://search.cpan.org/dist/Types-Serialiser
+# Packager: mimir knowledgeispower80-at-gmail-dot-com
+# Depends on: 
+
+name=perl-types-serialiser
+version=1.0
+release=1
+source=(http://search.cpan.org/CPAN/authors/id/M/ML/MLEHMANN/Types-Serialiser-$version.tar.gz)
+
+build() {
+	cd Types-Serialiser-$version
+perl Makefile.PL PREFIX=/usr INSTALLDIRS=vendor
+make
+make DESTDIR=$PKG install
+find $PKG -name '.packlist' -o -name 'perllocal.pod' -delete
+}
