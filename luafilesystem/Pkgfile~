@@ -1,7 +1,7 @@
 # Description: File System for the Lua Programming Language
 # URL: http://www.keplerproject.org/luafilesystem/
 # Packager: Roosevelt knowledgeispower80 at gmail dot com
-# Depends on: lua 
+# Depends on: 
 
 name=luafilesystem
 version=1.6.2

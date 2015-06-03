@@ -4,7 +4,7 @@
 # Depends on:  wxgtk libidn gnutls xdg-utils tinyxml
 
 name=filezilla
-version=3.10.1
+version=3.11.0.1
 release=1
 source=(http://downloads.sourceforge.net/project/$name/FileZilla_Client/$version/FileZilla_${version}_src.tar.bz2)
 
