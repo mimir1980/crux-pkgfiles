@@ -1,0 +1,24 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-r-xr-xr-x	root/root	usr/bin/json_xs
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/perl5/
+drwxr-xr-x	root/root	usr/lib/perl5/5.18.4/
+drwxr-xr-x	root/root	usr/lib/perl5/5.18.4/linux-thread-multi/
+drwxr-xr-x	root/root	usr/lib/perl5/5.18.4/linux-thread-multi/JSON/
+-r--r--r--	root/root	usr/lib/perl5/5.18.4/linux-thread-multi/JSON/XS.pm
+drwxr-xr-x	root/root	usr/lib/perl5/5.18.4/linux-thread-multi/JSON/XS/
+-r--r--r--	root/root	usr/lib/perl5/5.18.4/linux-thread-multi/JSON/XS/Boolean.pm
+drwxr-xr-x	root/root	usr/lib/perl5/5.18.4/linux-thread-multi/auto/
+drwxr-xr-x	root/root	usr/lib/perl5/5.18.4/linux-thread-multi/auto/JSON/
+drwxr-xr-x	root/root	usr/lib/perl5/5.18.4/linux-thread-multi/auto/JSON/XS/
+-r--r--r--	root/root	usr/lib/perl5/5.18.4/linux-thread-multi/auto/JSON/XS/XS.bs (EMPTY)
+-r-xr-xr-x	root/root	usr/lib/perl5/5.18.4/linux-thread-multi/auto/JSON/XS/XS.so
+drwxr-xr-x	root/root	usr/lib/perl5/5.18/
+drwxr-xr-x	root/root	usr/lib/perl5/5.18/linux-thread-multi/
+drwxr-xr-x	root/root	usr/man/
+drwxr-xr-x	root/root	usr/man/man1/
+-r--r--r--	root/root	usr/man/man1/json_xs.1pm.gz
+drwxr-xr-x	root/root	usr/man/man3/
+-r--r--r--	root/root	usr/man/man3/JSON::XS.3pm.gz
+-r--r--r--	root/root	usr/man/man3/JSON::XS::Boolean.3pm.gz

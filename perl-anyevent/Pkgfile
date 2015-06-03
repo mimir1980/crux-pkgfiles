@@ -1,0 +1,18 @@
+# Description: The DBI of event loop programming
+# URL: https://metacpan.org/release/AnyEvent
+# Packager: mimir knowledgeispower80-at-gmail-dot-com
+# Depends on: perl-async-interrupt perl-ev perl-guard perl-json-xs p5-net-ssleay 
+
+name=perl-anyevent
+version=7.08
+release=1
+source=(http://search.cpan.org/CPAN/authors/id/M/ML/MLEHMANN/AnyEvent-$version.tar.gz)
+
+build() {
+	cd AnyEvent-$version
+        perl Makefile.PL INSTALLDIRS=vendor PREFIX=/usr
+        make
+        make DESTDIR=$PKG install
+find $PKG -name '.packlist' -delete
+find $PKG -name '*.pod' -delete
+}
