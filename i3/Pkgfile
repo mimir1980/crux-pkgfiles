@@ -4,9 +4,9 @@
 # Depends on: perl-json dbus startup-notification xorg-libxcb xorg-xcb-util xorg-xcb-util-keysyms xorg-xcb-util-wm xorg-xcb-util-cursor yajl libev pango dmenu perl-common-sense perl-types-serialiser perl-anyevent perl-anyevent-i3   
 
 name=i3
-version=4.8
+version=4.12
 release=1
-source=(http://i3wm.org/downloads/i3-4.8.tar.bz2)
+source=(http://i3wm.org/downloads/i3-4.12.tar.bz2)
 
 build() {
 	cd $name-$version

@@ -4,7 +4,7 @@
 # Depends on: 
 
 name=perl-json-xs
-version=3.01
+version=3.02
 release=1
 source=(http://search.cpan.org/CPAN/authors/id/M/ML/MLEHMANN/JSON-XS-$version.tar.gz)
 

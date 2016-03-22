@@ -4,7 +4,7 @@
 # Depends on: openssl
 
 name=p5-net-ssleay
-version=1.66
+version=1.72
 release=1
 source=(http://search.cpan.org/CPAN/authors/id/M/MI/MIKEM/Net-SSLeay-$version.tar.gz)
 

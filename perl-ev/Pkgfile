@@ -4,7 +4,7 @@
 # Depends on: 
 
 name=perl-ev
-version=4.18
+version=4.22
 release=1
 source=(http://search.cpan.org/CPAN/authors/id/M/ML/MLEHMANN/EV-$version.tar.gz)
 

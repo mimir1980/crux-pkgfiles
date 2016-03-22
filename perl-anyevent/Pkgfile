@@ -4,7 +4,7 @@
 # Depends on: perl-async-interrupt perl-ev perl-guard perl-json-xs p5-net-ssleay 
 
 name=perl-anyevent
-version=7.08
+version=7.12
 release=1
 source=(http://search.cpan.org/CPAN/authors/id/M/ML/MLEHMANN/AnyEvent-$version.tar.gz)
 

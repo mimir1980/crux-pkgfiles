@@ -1,10 +1,10 @@
 # Description: allow C/XS libraries to interrupt perl asynchronously
 # URL: https://metacpan.org/release/Async-Interrupt
 # Packager: mimir knowledgeispower80-at-gmail-dot-comm
-# Depends on: 
+# Depends on: perl-common-sense 
 
 name=perl-async-interrupt
-version=1.2
+version=1.21
 release=1
 source=(http://search.cpan.org/CPAN/authors/id/M/ML/MLEHMANN/Async-Interrupt-$version.tar.gz)
 

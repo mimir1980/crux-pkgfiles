@@ -4,7 +4,7 @@
 # Depends on: perl
 
 name=perl-common-sense
-version=3.73
+version=3.74
 release=1
 source=(http://search.cpan.org/CPAN/authors/id/M/ML/MLEHMANN/common-sense-$version.tar.gz)
 
