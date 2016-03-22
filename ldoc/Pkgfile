@@ -10,8 +10,8 @@ source=(https://github.com/stevedonovan/ldoc/archive/$version.tar.gz)
 
 build() {
 	cd LDoc-$version
-install -dm755 $PKG/usr/share/lua/5.2
-cp -a ldoc $PKG/usr/share/lua/5.2
+install -dm755 $PKG/usr/share/lua/5.3
+cp -a ldoc $PKG/usr/share/lua/5.3
 
 install -Dm755 ldoc.lua $PKG/usr/bin/ldoc.lua
 ln -s ldoc.lua $PKG/usr/bin/ldoc

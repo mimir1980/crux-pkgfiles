@@ -4,13 +4,13 @@
 # Depends on: glibc glib libffi gobject-introspection
 
 name=lgi
-version=0.8.0
+version=0.9.0
 release=1
 source=(https://github.com/pavouk/$name/archive/$version.tar.gz)
 
 build() {
 	cd $name-$version
-make LUA_LIBDIR=/usr/lib/lua/5.2 LUA_SHAREDIR=/usr/share/lua/5.2 \
+make LUA_LIBDIR=/usr/lib/lua/5.3 LUA_SHAREDIR=/usr/share/lua/5.3 \
 DESTDIR=$PKG install
 
 install -Dm644 LICENSE $PKG/usr/share/licenses/$name/LICENSE

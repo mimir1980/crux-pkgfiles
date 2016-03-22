@@ -5,12 +5,13 @@
 # Depends on:  zlib
 
 name=libxml2
-version=2.9.2
-release=2
-source=(ftp://xmlsoft.org/libxml2/$name-$version.tar.gz revert-catalog-initialize.patch)
+version=2.9.3
+release=1
+source=(ftp://xmlsoft.org/libxml2/$name-$version.tar.gz) 
+#revert-catalog-initialize.patch)
 # Added pathes to generate man pages for awesomewm
 build () {
-patch -d $name-$version -p1 -i $SRC/revert-catalog-initialize.patch
+#patch -d $name-$version -p1 -i $SRC/revert-catalog-initialize.patch
     cd $name-$version
 
     ./configure --prefix=/usr \

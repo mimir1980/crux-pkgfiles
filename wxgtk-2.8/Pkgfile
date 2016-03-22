@@ -1,0 +1,31 @@
+# Description: wxWidgets for GTK+
+# URL: http://www.wxwidgets.org/
+# Maintainer: Daryl Fonseca-Holt, wyatt at prairieturtle dot ca
+# Depends on: gtk glu gst-plugins-base-compat gconf xorg-libxxf86vm
+# Arch Maintainer: Bartlomiej Palmowski, rotwang at crux dot org dot pl
+
+name=wxgtk
+version=2.8.12
+release=4
+source=(http://download.sourceforge.net/wxwindows/wxGTK-$version.tar.bz2)
+
+build() {
+	export LDFLAGS="$LDFLAGS -L/usr/X11R6/lib"
+	cd wxGTK-$version
+#	patch -p0 -i $SRC/$name-$version-gsocket.patch
+	# quick workaround (configure can't find mesa3d libs on 64 bit)
+	sed -i '/^SEARCH_INCLUDE="\\/s|\\|/usr/lib \\|' configure       
+	./configure \
+		--prefix=/usr \
+		--enable-gtk2 \
+		--enable-unicode \
+		--with-opengl \
+		--enable-mediactrl
+	make
+	make prefix=$PKG/usr install
+	cd contrib
+	make
+	make prefix=$PKG/usr install
+	ln -sf /usr/lib/wx/config/gtk2-unicode-release-2.8 $PKG/usr/bin/wx-config
+	rm -rf $PKG/usr/share/locale $PKG/usr/share/bakefile
+}

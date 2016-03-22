@@ -10,10 +10,10 @@ source=(http://git.sysphere.org/vicious/snapshot/$name-$version.tar.xz)
 
 build() {
 	cd $name-$version
-install -dm755 $PKG/usr/share/lua/5.2/$name/{widgets,contrib}
-install -m644 *.lua $PKG/usr/share/lua/5.2/$name
-install -m644 widgets/*.lua $PKG/usr/share/lua/5.2/$name/widgets
-install -m644 contrib/*.lua $PKG/usr/share/lua/5.2/$name/contrib
+install -dm755 $PKG/usr/share/lua/5.3/$name/{widgets,contrib}
+install -m644 *.lua $PKG/usr/share/lua/5.3/$name
+install -m644 widgets/*.lua $PKG/usr/share/lua/5.3/$name/widgets
+install -m644 contrib/*.lua $PKG/usr/share/lua/5.3/$name/contrib
 
 rm -rf $PKG/usr/share/doc
 }
