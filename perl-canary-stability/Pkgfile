@@ -1,0 +1,18 @@
+# Description: perl interface to libev, a high performance full-featured event loop
+# URL: https://metacpan.org/release/Canary-Stability
+# Packager: mimir knowledgeispower80-at-gmail-dot-com
+# Depends on: 
+
+name=perl-canary-stability
+version=2006
+release=1
+source=(http://search.cpan.org/CPAN/authors/id/M/ML/MLEHMANN/Canary-Stability-$version.tar.gz)
+
+build() {
+	cd Canary-Stability-$version
+        perl Makefile.PL INSTALLDIRS=vendor PREFIX=/usr PERL_CANARY_STABILITY_COLOUR=1
+        make test
+        make DESTDIR=$PKG install
+#find $PKG -name '.packlist' -delete
+#find $PKG -name '*.pod' -delete
+}

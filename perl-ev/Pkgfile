@@ -1,16 +1,20 @@
 # Description: perl interface to libev, a high performance full-featured event loop
 # URL: https://metacpan.org/release/EV
 # Packager: mimir knowledgeispower80-at-gmail-dot-com
-# Depends on: 
+# Depends on: perl-canary-stability perl-common-sense 
 
 name=perl-ev
-version=4.22
+version=4.18
 release=1
-source=(http://search.cpan.org/CPAN/authors/id/M/ML/MLEHMANN/EV-$version.tar.gz)
+source=(http://mirror.umd.edu/gentoo/distfiles/EV-$version.tar.gz)
+#http://search.cpan.org/CPAN/authors/id/M/ML/MLEHMANN/EV-$version.tar.gz
 
 build() {
-	cd EV-$version
-        perl Makefile.PL INSTALLDIRS=vendor PREFIX=/usr
+	
+         cd EV-$version
+          export PATH=$PATH:/usr/share 
+
+  perl Makefile.PL INSTALLDIRS=vendor 
         make
         make DESTDIR=$PKG install
 find $PKG -name '.packlist' -delete

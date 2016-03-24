@@ -1,7 +1,7 @@
 # Description: The DBI of event loop programming
 # URL: https://metacpan.org/release/AnyEvent
 # Packager: mimir knowledgeispower80-at-gmail-dot-com
-# Depends on: perl-async-interrupt perl-ev perl-guard perl-json-xs p5-net-ssleay 
+# Depends on: perl-async-interrupt perl-guard perl-json-xs p5-net-ssleay 
 
 name=perl-anyevent
 version=7.12

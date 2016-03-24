@@ -4,7 +4,7 @@
 # Depends on: 
 
 name=perl-anyevent-i3
-version=0.16.2
+version=0.16
 release=1
 source=(http://search.cpan.org/CPAN/authors/id/M/MS/MSTPLBG/AnyEvent-I3-$version.tar.gz)
 

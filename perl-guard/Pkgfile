@@ -1,7 +1,7 @@
 # Description: safe cleanup blocks
 # URL: https://metacpan.org/release/Guard
 # Packager: mimir knowledgeispower80-at-gmail-dot-com
-# Depends on: perl
+# Depends on: 
 
 name=perl-guard
 version=1.023

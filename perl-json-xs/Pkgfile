@@ -1,12 +1,13 @@
 # Description: JSON serialising/deserialising, done correctly and fast
 # URL: http://search.cpan.org/dist/JSON-XS/
 # Packager: mimir knowledgeispower80-at-gmail-dot-com
-# Depends on: 
+# Depends on: perl-anyevent-i3 
 
 name=perl-json-xs
-version=3.02
+version=3.01
 release=1
-source=(http://search.cpan.org/CPAN/authors/id/M/ML/MLEHMANN/JSON-XS-$version.tar.gz)
+source=(http://mirror.umd.edu/gentoo/distfiles/JSON-XS-$version.tar.gz)
+#http://search.cpan.org/CPAN/authors/id/M/ML/MLEHMANN/JSON-XS-$version.tar.gz)
 
 build() {
 	cd JSON-XS-$version
